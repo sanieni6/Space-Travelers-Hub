@@ -3,7 +3,7 @@ import dragonReducer from './dragon/dragonSlice';
 
 const store = configureStore({
   reducer: {
-    Dragon: dragonReducer,
+    dragon: dragonReducer,
   },
 });
 
