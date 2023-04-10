@@ -1,7 +1,10 @@
-/* eslint-disable import/prefer-default-export */
 import { configureStore } from '@reduxjs/toolkit';
+import Dragon from './dragon/dragon';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
+    Dragon,
   },
 });
+
+export default store;
