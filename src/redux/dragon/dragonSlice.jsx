@@ -1,9 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const initialState = {};
+
 const dragonSlice = createSlice({
   name: 'dragon',
-  initialState: {
-    dragon: {},
+  initialState,
+  extraReducers: () => {
+
   },
 });
 

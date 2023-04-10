@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import Dragon from './dragon/dragon';
+import dragonReducer from './dragon/dragonSlice';
 
 const store = configureStore({
   reducer: {
-    Dragon,
+    Dragon: dragonReducer,
   },
 });
 
