@@ -2,13 +2,18 @@ import React from 'react';
 import Planet from '../images/planet.png';
 
 const Dragons = () => (
-  <>
-    <img src={Planet} alt="img" />
-    <h1>Dragons</h1>
-    <p>Dragons are a type of creature that can be found in the game.</p>
-    <button type="button">reserve</button>
-    <button type="button">cancel</button>
-  </>
+  <div className="dragonCard">
+    <img className="dragonImage" src={Planet} alt="dragon" />
+    <div className="dragonInfo">
+      <h2>Dragon</h2>
+      <button className="reservDragon" type="button">
+        Reserve
+      </button>
+      <button className="cancelDragon" type="button">
+        Cancel Reservation
+      </button>
+    </div>
+  </div>
 );
 
 export default Dragons;
