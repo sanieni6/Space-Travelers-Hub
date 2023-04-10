@@ -12,7 +12,6 @@ export const missionList = createAsyncThunk('mission/missionList',
   async (thunkAPI) => {
     try {
       const response = await axios(url);
-      console.log(response.data);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue('something went wrong');
