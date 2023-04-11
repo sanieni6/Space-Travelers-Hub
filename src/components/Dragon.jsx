@@ -7,6 +7,7 @@ const Dragon = ({
   name, type, description, image,
 }) => {
   const dispatch = useDispatch(); // Move dispatch inside the component
+  
 
   return (
     <div className="dragonCard">
