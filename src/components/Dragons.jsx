@@ -1,9 +1,14 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Dragon from './Dragon';
+import { getDragons } from '../redux/dragon/dragonSlice';
 
 const Dragons = () => {
   const dragons = useSelector((store) => store.dragon.dragons);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getDragons());
+  }, [dispatch]);
 
   return (
     <div>
@@ -11,8 +16,8 @@ const Dragons = () => {
         {dragons.map((dragon) => (
           <Dragon
             key={dragon.id}
-            name={dragon.dragon_name}
-            type={dragon.dragon_type || 'Unknown'}
+            name={dragon.name}
+            type={dragon.dragon_type}
             description={dragon.description}
             image={dragon.flickr_images}
           />
