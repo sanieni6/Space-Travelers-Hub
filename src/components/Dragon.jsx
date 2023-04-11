@@ -4,10 +4,12 @@ import { useDispatch } from 'react-redux';
 import reserveDragon from '../redux/dragon/dragonSlice';
 
 const Dragon = ({
-  name, type, description, image,
+  name, type, description, image, reserved, id,
 }) => {
-  const dispatch = useDispatch(); // Move dispatch inside the component
-  
+  const dispatch = useDispatch();
+  const handleReserve = (id) => {
+    dispatch(reserveDragon(id));
+  };
 
   return (
     <div className="dragonCard">
@@ -15,15 +17,22 @@ const Dragon = ({
       <div className="dragonInfo">
         <h2>{name}</h2>
         <h3 className="dragonType">{type}</h3>
-        <p>{description}</p>
+        <p>
+          {reserved ? (
+            <span className="reservation-status">Reserved</span>
+          ) : (
+            <span />
+          )}
+          {description}
+        </p>
         <button
-          className="reservDragon"
           type="button"
+          onClick={() => {
+            handleReserve(id);
+          }}
+          className="reservDragon"
         >
-          Reserve
-        </button>
-        <button className="cancelDragon" type="button">
-          Cancel Reservation
+          {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
         </button>
       </div>
     </div>
@@ -36,6 +45,8 @@ Dragon.propTypes = {
   description: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
   image: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default Dragon;
