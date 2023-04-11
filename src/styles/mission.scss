@@ -21,9 +21,45 @@ table {
     padding: 0.6rem;
   }
 
-  .btns {
-    width: 7%;
+  .btnns {
+    width: 10%;
     text-align: center;
+    border-radius: 0.5rem;
+
+    .btn-not {
+      padding: 0.4rem;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 0.4rem;
+    }
+
+    .btn-mem {
+      padding: 0.4rem;
+      color: #fff;
+      background-color: rgb(0, 149, 255);
+      border: none;
+      border-radius: 0.4rem;
+    }
+  }
+
+  .btns {
+    width: 8%;
+    text-align: center;
+    border-radius: 0.5rem;
+
+    .btn-join {
+      padding: 0.5rem;
+      border-radius: 0.4rem;
+    }
+
+    .btn-leave {
+      border: 1px solid red;
+      color: red;
+      padding: 0.5rem;
+      background-color: #fff;
+      border-radius: 0.4rem;
+    }
   }
 
   tbody:nth-child(even) {
