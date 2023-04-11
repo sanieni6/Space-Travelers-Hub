@@ -5,8 +5,7 @@ const Dragon = ({
   name, type, description, image,
 }) => (
   <div className="dragonCard">
-    <img src={image} alt="dragon" className="dragonImage" />
-
+    <img className="dragonImage" src={image} alt="dragon" />
     <div className="dragonInfo">
       <h2>{name}</h2>
       <h3 className="dragonType">{type}</h3>

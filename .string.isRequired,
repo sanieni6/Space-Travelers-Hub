@@ -1,0 +1,300 @@
+[33mcommit c81777dfa8528f2d77288085ae0c58f24ca78a57[m[33m ([m[1;36mHEAD -> [m[1;32mfetch-dragon[m[33m)[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Tue Apr 11 02:43:50 2023 +0100
+
+    render to the dom
+
+[33mcommit ab0c4454bf521c18252afa4bca4619bea1a83176[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Tue Apr 11 01:58:26 2023 +0100
+
+     update dragonslice
+
+[33mcommit 5be9e4861609e80cff859b05208f769b0287dd75[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Tue Apr 11 01:38:04 2023 +0100
+
+    fix prop type validation
+
+[33mcommit 0614320832f3eb5a22e3c1223e6d782684d9e2fb[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Tue Apr 11 01:04:53 2023 +0100
+
+    resolved conflict
+
+[33mcommit f2ffa690c28e74b774d996df7ab7fe0396c878f0[m
+Merge: a72bf4a 3a35cf7
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Tue Apr 11 01:01:45 2023 +0100
+
+    Merge branch 'cbn-solution' of https://github.com/sanieni6/Space-Travelers-Hub into fetch-dragon
+
+[33mcommit a72bf4a3780a31e6699f66482c1cbbd5ae177080[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Tue Apr 11 00:56:58 2023 +0100
+
+    setup the intial dragon
+
+[33mcommit eb10456b143b348cf051418f59c676dfa24192fe[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Tue Apr 11 00:49:36 2023 +0100
+
+    update the dragon store
+
+[33mcommit 3a35cf7e657c62443e0b396c742e866d3a82e560[m
+Merge: 97ebc9a 507b027
+Author: Abraham Christopher <68823331+Cabraham1@users.noreply.github.com>
+Date:   Tue Apr 11 00:44:31 2023 +0100
+
+    Merge pull request #28 from sanieni6/RocketsStructure
+    
+    Create basic structure for Rockets
+
+[33mcommit 507b0276f6d723c5216332d034d1ce56ddaf2f32[m[33m ([m[1;31morigin/RocketsStructure[m[33m)[m
+Merge: 466b0b9 97ebc9a
+Author: Abraham Christopher <68823331+Cabraham1@users.noreply.github.com>
+Date:   Tue Apr 11 00:38:33 2023 +0100
+
+    Merge branch 'cbn-solution' into RocketsStructure
+
+[33mcommit 97ebc9a563e6bb65df308f3959a67499b255d5cf[m
+Merge: 0d59726 e4cbe5c
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Mon Apr 10 17:46:16 2023 -0500
+
+    Merge pull request #30 from sanieni6/fetchMissiion
+    
+    Fetch missiion
+
+[33mcommit e4cbe5cca98608d08f51c06d954d825239e9ff2f[m[33m ([m[1;31morigin/fetchMissiion[m[33m)[m
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Mon Apr 10 17:40:34 2023 -0500
+
+    update store
+
+[33mcommit 5596e39be41414fa2275237aa9bc9c61f548cbca[m
+Merge: 23425bf 0d59726
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Mon Apr 10 17:35:50 2023 -0500
+
+    Merge branch 'cbn-solution' into fetchMissiion
+
+[33mcommit 0d5972666552623109bcca5f47df39fe00dbf438[m
+Merge: c61757e 5d54ca9
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Mon Apr 10 17:34:15 2023 -0500
+
+    Merge pull request #29 from sanieni6/dragon-setup
+    
+    Milestone: Dragon setup
+
+[33mcommit 23425bf1369458b8b332de1e54725334175ee03a[m
+Author: johnie261 <njorogejohn261@gmail.com>
+Date:   Tue Apr 11 01:26:09 2023 +0300
+
+    Fix linters
+
+[33mcommit dfa6644ab104bf6c7c7f4b3c109730ee64eed36a[m
+Author: johnie261 <njorogejohn261@gmail.com>
+Date:   Tue Apr 11 01:23:46 2023 +0300
+
+    Dispatch an action to store selected data
+
+[33mcommit 35534990015585bcf352fd7f204caae0e956ca45[m
+Author: johnie261 <njorogejohn261@gmail.com>
+Date:   Tue Apr 11 01:21:35 2023 +0300
+
+    Fetch data from Api
+
+[33mcommit 5d54ca90b8990a3d1b2f7ccaeb9d9012b5b8247b[m[33m ([m[1;31morigin/dragon-setup[m[33m, [m[1;32mdragon-setup[m[33m)[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 23:20:33 2023 +0100
+
+    Solved
+
+[33mcommit 28671ef3ae07c2bb2e3966b8c9391866d24dda1d[m
+Author: johnie261 <njorogejohn261@gmail.com>
+Date:   Tue Apr 11 01:19:46 2023 +0300
+
+    Import mission reducer
+
+[33mcommit 79b5a1a56f2464ffb1a533a6a77bbd8ae865f7a3[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 23:04:12 2023 +0100
+
+    Fix linters
+
+[33mcommit 1ce8dcc7f9f3936636e4785495ddcaf411c01ebc[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 23:02:16 2023 +0100
+
+    Dragon setup
+
+[33mcommit a1e330ba45778da1ab6fbc747b36cd9be582bf58[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 22:53:23 2023 +0100
+
+    Add css styles
+
+[33mcommit 142d8608556c279d622778286f230b9380f2d0c7[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 22:42:31 2023 +0100
+
+    Add dragon to store
+
+[33mcommit 16c08a0d73b326b16eb48010e12c2a1cef623b70[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 22:39:46 2023 +0100
+
+    set up dragon reduceser
+
+[33mcommit 04c85a35f56922143b6351fe8a37c5e51fcad0ca[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 22:23:36 2023 +0100
+
+    solved store conflits
+
+[33mcommit b5fa98de0284b5312f894d9c4670e92df3c6f831[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 22:19:47 2023 +0100
+
+    solve conflit
+
+[33mcommit b5b780b557b0dcfe43732a438f3de4a57a7f96b9[m
+Merge: 632e6ff c61757e
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 22:18:30 2023 +0100
+
+    solve conflit
+
+[33mcommit 466b0b912533866afe0eb2f556f300c4967d4e0c[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 15:22:50 2023 -0500
+
+    Add some styles
+
+[33mcommit 584f97ee0e4c2ec9a07f383d707767cd49de1c62[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 15:22:32 2023 -0500
+
+    Add new components, add image resourse for the example
+
+[33mcommit c9ff4e9724bbc0e0a7e4ffd3afc4f1c6528cd76b[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 15:21:33 2023 -0500
+
+    Add new slice
+
+[33mcommit c83a191f3b9f7e3c8c9c6636feee21c49aa50833[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 15:20:39 2023 -0500
+
+    Add dependencies: proptypes
+
+[33mcommit c61757e549a7f27e71872d4bcf8887d30fd89905[m
+Merge: eb023fb 22538ef
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Mon Apr 10 14:19:44 2023 -0500
+
+    Merge pull request #27 from sanieni6/header
+    
+    Create website header
+
+[33mcommit 22538efd6ba46fd8d448acba837eae3eca5ddb69[m[33m ([m[1;31morigin/header[m[33m)[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 13:56:38 2023 -0500
+
+    Add style change
+
+[33mcommit 8390f7ef2a0a7dd3f393ecceee670ab585c6e109[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 13:55:00 2023 -0500
+
+    Add styles to the header
+
+[33mcommit 8b24c3afa3db031473099c12dfc19d828cec08a8[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 13:54:30 2023 -0500
+
+    Add React Router to the project
+
+[33mcommit 3c2020a2350560ba99995a2739cc8db45d63aeac[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 13:53:54 2023 -0500
+
+    Create navbar components, save image resource
+
+[33mcommit 632e6ff8c47199a692146ad8a1176b8377d91539[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 18:42:40 2023 +0100
+
+    Clear css files
+
+[33mcommit a400adb9238628a2f38b2d67a1a5da678adaf687[m
+Author: cabraham1 <christopherabraham8@gmail.com>
+Date:   Mon Apr 10 18:39:14 2023 +0100
+
+    clear unwanted files
+
+[33mcommit eb023fb0f5b7b173fb64fe49ab00686aaba452fd[m[33m ([m[1;32mcbn-solution[m[33m)[m
+Merge: 6475704 6c36352
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Mon Apr 10 12:13:18 2023 -0500
+
+    Merge pull request #26 from sanieni6/setUp
+    
+    Create app and install basic dependencies - Setup
+
+[33mcommit 6c36352cecbfd042225080307a047bdd621f37d4[m[33m ([m[1;31morigin/setUp[m[33m)[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 11:58:01 2023 -0500
+
+    fix eslint
+
+[33mcommit 9c50c76cfe28b9a887eb1bc1fc2b894c60db6bca[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 11:56:04 2023 -0500
+
+    fix linters config
+
+[33mcommit 8c9f3d332d275c729270cb1fe06b3c60b5f5a436[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 11:49:59 2023 -0500
+
+    Add new module: redux-logger
+
+[33mcommit 7eff0eed0f393624e9bdcc089966e1a338538eaa[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 11:43:46 2023 -0500
+
+    Add some dependencies: axios, react-router, sass, postcss
+
+[33mcommit 0488212f5f5d0195d887581f9894094dfdd1742f[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 11:38:39 2023 -0500
+
+    Setup linters
+
+[33mcommit eae0d4b3255b8c6dd695e4ae601fb31a9049b787[m
+Author: sanieni6 <sanieni6@gmail.com>
+Date:   Mon Apr 10 11:38:06 2023 -0500
+
+    Setup React-redux project
+
+[33mcommit 6475704f01a08bbff236905ac8801dcbc0129d0e[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Sun Apr 9 22:31:26 2023 -0500
+
+    Create LICENSE.md
+
+[33mcommit 74122ad87aea6d983375e47c334d19a132d4a2df[m
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Sun Apr 9 22:30:16 2023 -0500
+
+    Update Readme.md
+
+[33mcommit 8b4e58f8476e18ce1497decdd7231df540956b8f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Luis Sanchez <luissanchezzamora23@gmail.com>
+Date:   Sun Apr 9 21:54:16 2023 -0500
+
+    Initial commit

@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import rocket from '../../images/rocket.jpg';
+import planet from '../../images/planet.png';
 
 const initialState = {
   dragons: [
@@ -8,21 +8,21 @@ const initialState = {
       name: 'Dragon 1',
       type: 'capsule',
       description: 'Dragon 1 description',
-      image: rocket,
+      flickr_images: planet,
     },
     {
       id: 2,
       name: 'Dragon 2',
       type: 'capsule',
       description: 'Dragon 2 description',
-      image: rocket,
+      flickr_images: planet,
     },
     {
       id: 3,
       name: 'Dragon 3',
       type: 'capsule',
       description: 'Dragon 3 description',
-      image: rocket,
+      flickr_images: planet,
     },
   ],
   isLoading: true,
