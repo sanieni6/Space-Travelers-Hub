@@ -7,7 +7,7 @@ const Rocket = ({
 }) => (
   <li className="rocket">
     <img src={image} alt="rockets" className="rocket-image" />
-    <div>
+    <div className="rocket-information">
       <h3 className="Rocket-name">{name}</h3>
       <p className="rocket-description">{description}</p>
       <button type="button" className="reserve-button">Reserve Rocket</button>
