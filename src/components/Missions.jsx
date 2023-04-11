@@ -29,6 +29,7 @@ const Missions = () => {
             id={mssn.mission_id}
             name={mssn.mission_name}
             description={mssn.description}
+            mssn={mssn}
           />
         ))}
       </table>
