@@ -1,35 +1,39 @@
-import { createSlice } from '@reduxjs/toolkit';
-import rocket from '../../images/rocket.jpg';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+
+const url = 'https://api.spacexdata.com/v3/rockets';
 
 const initialState = {
-  rockets: [
-    {
-      id: 1,
-      rocket_name: 'legacy',
-      description: 'empty',
-      flickr_images: rocket,
-    },
-    {
-      id: 2,
-      rocket_name: 'legacy',
-      description: 'empty',
-      flickr_images: rocket,
-    },
-    {
-      id: 3,
-      rocket_name: 'legacy',
-      description: 'empty',
-      flickr_images: rocket,
-    },
-  ],
+  rockets: [],
   isLoading: true,
   error: undefined,
 };
 
+export const getRockects = createAsyncThunk('rockets/getRockects',
+  async (thunkAPI) => {
+    try {
+      const response = await axios(url);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue('something went wrong');
+    }
+  });
+
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
-  extraReducers: () => {
+  extraReducers: (builder) => {
+    builder
+      .addCase(getRockects.pending, (state) => ({
+        ...state,
+      }))
+      .addCase(getRockects.fulfilled, (state, action) => ({
+        ...state,
+        rockets: action.payload,
+      }))
+      .addCase(getRockects.rejected, (state) => ({
+        ...state,
+      }));
   },
 });
 
