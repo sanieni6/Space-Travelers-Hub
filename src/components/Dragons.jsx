@@ -7,8 +7,10 @@ const Dragons = () => {
   const dragons = useSelector((store) => store.dragon.dragons);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getDragons());
-  }, [dispatch]);
+    if (!dragons.length) {
+      dispatch(getDragons());
+    }
+  }, [dispatch, dragons]);
 
   return (
     <div>
