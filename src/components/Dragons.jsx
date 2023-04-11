@@ -20,6 +20,7 @@ const Dragons = () => {
             type={dragon.dragon_type}
             description={dragon.description}
             image={dragon.flickr_images}
+            reserved={dragon.reserved}
           />
         ))}
       </ul>
