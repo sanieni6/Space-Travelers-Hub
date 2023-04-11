@@ -3,22 +3,22 @@ import { useSelector } from 'react-redux';
 import Dragon from './Dragon';
 
 const Dragons = () => {
-  const { dragons } = useSelector((store) => store.dragons);
+  const dragons = useSelector((store) => store.dragon.dragons);
 
   return (
-    <>
+    <div>
       <ul className="dragon-list">
         {dragons.map((dragon) => (
           <Dragon
             key={dragon.id}
-            name={dragon.name}
-            type={dragon.type}
+            name={dragon.dragon_name}
+            type={dragon.dragon_type || 'Unknown'}
             description={dragon.description}
-            image={dragon.image}
+            image={dragon.flickr_images}
           />
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
