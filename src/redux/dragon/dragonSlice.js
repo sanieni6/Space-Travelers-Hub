@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import planet from '../../assets/planet.png';
+import planet from '../../images/planet.png';
 
 const initialState = {
   dragons: [
