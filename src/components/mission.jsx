@@ -20,16 +20,43 @@ const MissionItem = ({
       <tr className="column">
         <td><h4>{name}</h4></td>
         <td>{description}</td>
-        <td className="btns">
-          <button type="button" className="btn-member">Not A Member</button>
+        <td className="btnns">
+          { !mssn.reserved ? (
+            <button
+              type="button"
+              className="btn-not"
+            >
+              NOT A MEMBER
+              {' '}
+              <p />
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="btn-mem"
+            >
+              Active Member
+            </button>
+          )}
         </td>
         <td className="btns">
-          <button
-            type="button"
-            onClick={() => { handleClick(id, mssn); }}
-          >
-            Join Mission
-          </button>
+          { !mssn.reserved ? (
+            <button
+              type="button"
+              onClick={() => { handleClick(id, mssn); }}
+              className="btn-join"
+            >
+              Join Mission
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={() => { handleClick(id, mssn); }}
+              className="btn-leave"
+            >
+              Leave Mission
+            </button>
+          )}
         </td>
       </tr>
     </tbody>
