@@ -18,6 +18,7 @@ const initialState = {
     {
       id: 2,
       dragon_name: 'Dragon 1',
+      dragon_type: 'capsule',
       description: 'Dragon 1 description',
       flickr_images: planet,
     },
