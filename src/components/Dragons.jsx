@@ -21,6 +21,7 @@ const Dragons = () => {
             description={dragon.description}
             image={dragon.flickr_images}
             reserved={dragon.reserved}
+
           />
         ))}
       </ul>

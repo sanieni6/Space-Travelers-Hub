@@ -7,10 +7,21 @@ const initialState = {
   error: undefined,
 };
 
-export const getDragons = createAsyncThunk('dragon/getDragons', async () => {
-  const response = await axios.get('https://api.spacexdata.com/v3/dragons');
-  return response.data;
-});
+export const getDragons = createAsyncThunk(
+  'dragon/getDragons',
+  async (thunkAPI) => {
+    try {
+      const response = await axios.get('https://api.spacexdata.com/v3/dragons');
+      const dragonsArray = response.data.map((dragon) => ({
+        ...dragon,
+        reserved: false,
+      }));
+      return dragonsArray;
+    } catch (error) {
+      return thunkAPI.rejectWithValue('something went wrong');
+    }
+  },
+);
 
 const dragonSlice = createSlice({
   name: 'dragon',
@@ -18,7 +29,9 @@ const dragonSlice = createSlice({
   reducers: {
     reservedDragon: (state, { payload }) => {
       const newState = state.dragons.map((dragon) => {
-        if (dragon.id !== payload) { return dragon; }
+        if (dragon.id !== payload) {
+          return dragon;
+        }
         return { ...dragon, reserved: !dragon.reserved };
       });
       return { ...state, dragons: newState };
