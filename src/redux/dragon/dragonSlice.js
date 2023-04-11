@@ -1,38 +1,30 @@
-import { createSlice } from '@reduxjs/toolkit';
-import planet from '../../images/planet.png';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
-  dragons: [
-    {
-      id: 1,
-      name: 'Dragon 1',
-      type: 'capsule',
-      description: 'Dragon 1 description',
-      flickr_images: planet,
-    },
-    {
-      id: 2,
-      name: 'Dragon 2',
-      type: 'capsule',
-      description: 'Dragon 2 description',
-      flickr_images: planet,
-    },
-    {
-      id: 3,
-      name: 'Dragon 3',
-      type: 'capsule',
-      description: 'Dragon 3 description',
-      flickr_images: planet,
-    },
-  ],
+  dragons: [],
   isLoading: true,
   error: undefined,
 };
+
+export const getDragons = createAsyncThunk('dragon/getDragons', async () => {
+  const response = await axios.get('https://api.spacexdata.com/v3/dragons');
+  return response.data;
+});
 
 const dragonSlice = createSlice({
   name: 'dragon',
   initialState,
   reducers: {},
+  extraReducers(builder) {
+    builder
+      .addCase(getDragons.pending, (state) => ({ ...state, isLoading: true }))
+      .addCase(getDragons.fulfilled, (state, action) => ({
+        ...state,
+        isLoading: false,
+        dragons: action.payload,
+      }));
+  },
 });
 
 export default dragonSlice.reducer;
