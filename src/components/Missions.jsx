@@ -12,7 +12,7 @@ const Missions = () => {
     if (!missions.length) {
       dispatch(missionList());
     }
-  }, [dispatch]);
+  }, [dispatch, missions]);
 
   return (
     <>

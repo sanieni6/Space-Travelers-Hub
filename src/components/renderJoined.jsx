@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 const RenderJoined = () => {
   const resrvedMission = useSelector((store) => store.mission.missions)
     .filter((mission) => mission.reserved);
-  console.log(resrvedMission);
   return (
     <section className="missions">
       <h2>My Missions</h2>
