@@ -1,7 +1,10 @@
 import React from 'react';
+import RenderJoined from './renderJoined';
 
 const Profile = () => (
-  <h1>Profile</h1>
+  <>
+    <RenderJoined />
+  </>
 );
 
 export default Profile;

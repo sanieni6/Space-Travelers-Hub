@@ -9,8 +9,11 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(missionList());
-  }, []);
+    if (!missions.length) {
+      dispatch(missionList());
+    }
+  }, [dispatch]);
+
   return (
     <>
       <div className="border-line"> </div>
