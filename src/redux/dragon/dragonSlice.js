@@ -9,7 +9,7 @@ const initialState = {
 
 export const getDragons = createAsyncThunk(
   'dragon/getDragons',
-  async (thunkAPI) => {
+  async (_, thunkAPI) => {
     try {
       const response = await axios.get('https://api.spacexdata.com/v3/dragons');
       const dragonsArray = response.data.map((dragon) => ({

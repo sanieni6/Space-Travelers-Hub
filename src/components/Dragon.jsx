@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import reserveDragon from '../redux/dragon/dragonSlice';
+import { reservedDragon } from '../redux/dragon/dragonSlice';
 
 const Dragon = ({
   name, type, description, image, reserved, id,
 }) => {
   const dispatch = useDispatch();
   const handleReserve = (id) => {
-    dispatch(reserveDragon(id));
+    dispatch(reservedDragon(id));
   };
 
   return (
