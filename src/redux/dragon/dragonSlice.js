@@ -23,6 +23,11 @@ const dragonSlice = createSlice({
         ...state,
         isLoading: false,
         dragons: action.payload,
+      }))
+      .addCase(getDragons.rejected, (state, action) => ({
+        ...state,
+        isLoading: false,
+        error: action.payload,
       }));
   },
 });
