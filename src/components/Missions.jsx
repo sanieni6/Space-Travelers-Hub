@@ -15,10 +15,14 @@ const Missions = () => {
     <>
       <div className="border-line"> </div>
       <table>
-        <th><h4>Mission</h4></th>
-        <th><h4>Description</h4></th>
-        <th>Status</th>
-        <th> </th>
+        <thead>
+          <tr>
+            <th><h4>Mission</h4></th>
+            <th><h4>Description</h4></th>
+            <th>Status</th>
+            <th> </th>
+          </tr>
+        </thead>
         {missions.map((mssn) => (
           <MissionItem
             key={mssn.mission_id}
