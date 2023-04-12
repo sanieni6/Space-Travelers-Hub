@@ -13,7 +13,6 @@ const Rockets = () => {
   }, [dispatch, rockets]);
   return (
     <div>
-      <div className="border-line"> </div>
       <ul className="rocket-list">
         {rockets.map((rocket) => (
           <Rocket
