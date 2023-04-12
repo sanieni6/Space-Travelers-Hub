@@ -1,11 +1,11 @@
-const getDragon = () => {
-  const Dragon = [
+const getDragons = () => {
+  const Dragons = [
     {
       id: 1,
       name: 'Dragon 1',
       type: 'Capsule',
       description:
-        'The Dragon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Dragon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.',
+        'The Dragon 1 Dragon is a reusable spacecraft developed by SpaceX, an American private space transportation company based in Hawthorne, California. Dragon is launched into space by the SpaceX Falcon 9 two-stage-to-orbit launch vehicle. The Dragon spacecraft was originally designed for human travel, but so far has only been used to deliver cargo to the International Space Station (ISS).',
       reserved: true,
     },
     {
@@ -13,7 +13,7 @@ const getDragon = () => {
       name: 'Dragon 2',
       type: 'Capsule',
       description:
-        'The Dragon 2 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Dragon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.',
+        'The Dragon 2 Dragon is a reusable spacecraft developed by SpaceX, an American private space transportation company based in Hawthorne, California. Dragon is launched into space by the SpaceX Falcon 9 two-stage-to-orbit launch vehicle. The Dragon spacecraft was originally designed for human travel, but so far has only been used to deliver cargo to the International Space Station (ISS).',
       reserved: false,
     },
     {
@@ -21,11 +21,11 @@ const getDragon = () => {
       name: 'Dragon 3',
       type: 'Capsule',
       description:
-        'The Dragon 3 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Dragon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.',
+        'The Dragon 3 Dragon is a reusable spacecraft developed by SpaceX, an American private space transportation company based in Hawthorne, California. Dragon is launched into space by the SpaceX Falcon 9 two-stage-to-orbit launch vehicle. The Dragon spacecraft was originally designed for human travel, but so far has only been used to deliver cargo to the International Space Station (ISS).',
       reserved: true,
     },
   ];
-  return Dragon;
+  return Dragons;
 };
 
-export default getDragon;
+export default getDragons;
