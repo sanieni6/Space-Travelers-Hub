@@ -153,6 +153,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [twitter](https://twitter.com/njorogejohnie)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/john-njoroge-19b6a4245/)
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **mobile version**
+- [ ] **Add more features in profile section**
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
