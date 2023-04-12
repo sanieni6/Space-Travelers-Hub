@@ -7,8 +7,10 @@ const Rockets = () => {
   const { rockets } = useSelector((store) => store.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getRockects());
-  }, [dispatch]);
+    if (!rockets.length) {
+      dispatch(getRockects());
+    }
+  }, [dispatch, rockets]);
   return (
     <div>
       <div className="border-line"> </div>
