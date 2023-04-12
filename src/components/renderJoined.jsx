@@ -26,7 +26,7 @@ const RenderJoined = ({ list, render }) => {
           <div className="bookedMission">
             {list.map((rocket) => (
               <p key={rocket.id} className="booked-element">
-                {rocket.rocket_name}
+                {rocket.name}
               </p>
             ))}
           </div>

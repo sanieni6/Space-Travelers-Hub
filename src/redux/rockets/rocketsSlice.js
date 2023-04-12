@@ -13,7 +13,13 @@ export const getRockects = createAsyncThunk('rockets/getRockects',
   async (thunkAPI) => {
     try {
       const response = await axios(url);
-      const rocketsArray = response.data.map((rocket) => ({ ...rocket, reserved: false }));
+      const rocketsArray = response.data.map((rocket) => ({
+        id: rocket.id,
+        name: rocket.rocket_name,
+        description: rocket.description,
+        flickr_images: rocket.flickr_images[1],
+        reserved: false,
+      }));
       return rocketsArray;
     } catch (error) {
       return thunkAPI.rejectWithValue('something went wrong');
