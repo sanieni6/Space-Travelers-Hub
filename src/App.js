@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="border-line"> </div>
       <div className="main-container">
         <Routes>
           <Route path="/" element={<Rockets />} />
