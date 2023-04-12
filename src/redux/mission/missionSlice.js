@@ -12,7 +12,13 @@ export const missionList = createAsyncThunk('mission/missionList',
   async (thunkAPI) => {
     try {
       const response = await axios(url);
-      return response.data;
+      const missionsArray = response.data.map((mission) => ({
+        id: mission.mission_id,
+        name: mission.mission_name,
+        description: mission.description,
+        reserved: mission.reserved,
+      }));
+      return missionsArray;
     } catch (error) {
       return thunkAPI.rejectWithValue('something went wrong');
     }
@@ -24,7 +30,7 @@ const missionSlice = createSlice({
   reducers: {
     updateState: (state, action) => {
       const newMission = state.missions.map((mission) => {
-        if (mission.mission_id === action.payload) {
+        if (mission.id === action.payload) {
           return { ...mission, reserved: true };
         }
         return mission;
@@ -33,7 +39,7 @@ const missionSlice = createSlice({
     },
     leaveMission: (state, action) => {
       const leaveMission = state.missions.map((mission) => {
-        if (mission.mission_id === action.payload) {
+        if (mission.id === action.payload) {
           return { ...mission, reserved: false };
         }
         return mission;

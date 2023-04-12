@@ -27,9 +27,9 @@ const Missions = () => {
         </thead>
         {missions.map((mssn) => (
           <MissionItem
-            key={mssn.mission_id}
-            id={mssn.mission_id}
-            name={mssn.mission_name}
+            key={mssn.id}
+            id={mssn.id}
+            name={mssn.name}
             description={mssn.description}
             mssn={mssn}
           />

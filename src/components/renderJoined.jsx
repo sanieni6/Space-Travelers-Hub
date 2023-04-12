@@ -11,7 +11,7 @@ const RenderJoined = ({ list, render }) => {
           <div className="bookedMission">
             {list.map((mission) => (
               <p key={mission.mission_id} className="booked-element">
-                {mission.mission_name}
+                {mission.name}
               </p>
             ))}
           </div>
