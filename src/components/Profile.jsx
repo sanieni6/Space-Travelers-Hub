@@ -7,6 +7,8 @@ const Profile = () => {
     .filter((mission) => mission.reserved);
   const reservedRockets = useSelector((store) => store.rockets.rockets)
     .filter((rocket) => rocket.reserved);
+  const reservedDragons = useSelector((store) => store.dragon.dragons)
+    .filter((dragon) => dragon.reserved);
   return (
     <ul className="reserved-sections">
       <li className="section">
@@ -14,6 +16,9 @@ const Profile = () => {
       </li>
       <li className="section">
         <RenderJoined list={reservedRockets} render="rockets" />
+      </li>
+      <li className="section">
+        <RenderJoined list={reservedDragons} render="dragons" />
       </li>
     </ul>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const RenderJoined = ({ list, render }) => {
-  // eslint-disable-next-line consistent-return
   const reservedRender = () => {
     if (render === 'missions') {
       return (
@@ -35,7 +34,20 @@ const RenderJoined = ({ list, render }) => {
         </>
       );
     }
-    // Abraham add your return by defaul with your logic
+
+    return (
+      <>
+        <h2>My Dragons</h2>
+        <div className="bookedMission">
+          {list.map((dragon) => (
+            <p key={dragon.id} className="booked-element">
+              {dragon.name}
+            </p>
+          ))}
+        </div>
+
+      </>
+    );
   };
   return (
     <section className="missions">

@@ -7,8 +7,10 @@ const Dragons = () => {
   const dragons = useSelector((store) => store.dragon.dragons);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getDragons());
-  }, [dispatch]);
+    if (!dragons.length) {
+      dispatch(getDragons());
+    }
+  }, [dispatch, dragons]);
 
   return (
     <div>
@@ -17,9 +19,11 @@ const Dragons = () => {
           <Dragon
             key={dragon.id}
             name={dragon.name}
-            type={dragon.dragon_type}
+            type={dragon.type}
             description={dragon.description}
-            image={dragon.flickr_images}
+            image={dragon.flickr_images[0]}
+            reserved={dragon.reserved}
+            id={dragon.id}
           />
         ))}
       </ul>
