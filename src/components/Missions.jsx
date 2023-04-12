@@ -16,7 +16,6 @@ const Missions = () => {
 
   return (
     <>
-      <div className="border-line"> </div>
       <table>
         <thead>
           <tr>
