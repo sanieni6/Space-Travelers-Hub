@@ -168,6 +168,10 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for the inspiring and my coding partners for their collaboration.
+
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE.md) licensed.
