@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import RenderJoined from './renderJoined';
-import '../styles/App.css';
 
 const Profile = () => {
   const reservedMission = useSelector((store) => store.mission.missions)

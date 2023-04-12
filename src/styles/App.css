@@ -3,12 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.profile-contanier {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: -5rem;
-  width: 100%;
-  
-}
