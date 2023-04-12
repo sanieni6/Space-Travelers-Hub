@@ -10,7 +10,7 @@ const RenderJoined = ({ list, render }) => {
           <h2>My Missions</h2>
           <div className="bookedMission">
             {list.map((mission) => (
-              <p key={mission.mission_id} className="booked-element">
+              <p key={mission.id} className="booked-element">
                 {mission.name}
               </p>
             ))}
