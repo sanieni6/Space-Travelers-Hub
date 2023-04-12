@@ -13,7 +13,11 @@ export const getDragons = createAsyncThunk(
     try {
       const response = await axios.get('https://api.spacexdata.com/v3/dragons');
       const dragonsArray = response.data.map((dragon) => ({
-        ...dragon,
+        id: dragon.id,
+        name: dragon.name,
+        type: dragon.type,
+        description: dragon.description,
+        flickr_images: dragon.flickr_images,
         reserved: false,
       }));
       return dragonsArray;
