@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const RenderJoined = ({ list, render }) => {
-  // eslint-disable-next-line consistent-return
   const reservedRender = () => {
     if (render === 'missions') {
       return (
