@@ -83,9 +83,8 @@ The Space Travelers Hub application allows users to:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 ### Live Demo Link <a name="live-demo-link"></a>
-> [Live Demo Link](https://sanieni6.github.io/artworkListing-app/)
+> [Live Demo Link](https://spacetravelershub-j37j.onrender.com/)
 
-> [Video Demo Link](https://www.loom.com/share/e9669adcd79e40ffa246bca76faf8305)
 
 ## 📸 Screenshots <a name="screenshots"></a>
 
